@@ -1,0 +1,34 @@
+<!--pages/market/market.wxml-->
+<view>
+<text style="color:red;font-weight:bold" decode="true" id="time">{{date}}</text>
+<text class="iconfont icon-shaixuan" bindtap="fliter" id="fliter">筛选任务</text>
+
+<div class="clear"></div>
+
+  <view id="task" bindtap="jump"> 
+    <text id="task_status" decode="true">&nbsp;&nbsp;&nbsp;&nbsp;状态:\n</text>
+    <text>内容:\n</text>
+    <text>tips:\n</text>
+    <view id="money">￥:3</view>
+  </view>
+
+  <view id="task"bindtap="jump"> 
+    <text id="task_status" decode="true">&nbsp;&nbsp;&nbsp;&nbsp;状态:\n</text>
+    <text>内容:\n</text>
+    <text>tips:\n</text>
+    <view id="money">￥:3</view>
+  </view>
+
+  <view id="task"bindtap="jump"> 
+    <text id="task_status" decode="true">&nbsp;&nbsp;&nbsp;&nbsp;状态:\n</text>
+    <text>内容:\n</text>
+    <text>tips:\n</text>
+    <view id="money">￥:3</view>
+  </view>
+  <view id="task"bindtap="jump"> 
+    <text id="task_status" decode="true">&nbsp;&nbsp;&nbsp;&nbsp;状态:\n</text>
+    <text>内容:\n</text>
+    <text>tips:\n</text>
+    <view id="money">￥:3</view>
+  </view>
+</view>

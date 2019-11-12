@@ -1,0 +1,17 @@
+<!--pages/main_page/main_page.wxml-->
+  <view class='imagesize0'>
+    <view class="v0">
+    <image src="./img/symbol.png" class='in-image' style=" transform: scale(0.5)" ></image>
+    <text >我来帮您</text>
+   </view>
+   </view>
+<view class='imagesize'>
+  <view class="v1">
+  <image src="./img/p1.png" class='in-image' bindtap="jump_renwu"></image>
+  <text>任务悬赏</text>
+  </view>
+  <view class="v2">
+  <image src="./img/p2.png" class='in-image' bindtap="jump_baike"></image>
+  <text>信息百科</text>
+  </view>
+</view>

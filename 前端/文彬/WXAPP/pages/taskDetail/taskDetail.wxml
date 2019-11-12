@@ -1,0 +1,21 @@
+<view id="container">
+  <view id="time">
+  <text style="font-weight:bold">【待办】\n</text>
+  <text>时效:\n</text>
+  <text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2019.0918\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;to\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2019.0919\n\n\n</text>
+  <icon type="success" size="20px"></icon>
+  <text decode="true">体育&nbsp;代课&nbsp;男</text>
+  </view>
+  <view id="user">
+  <text >\nvenb\n</text>
+  </view>
+  <view id="money">
+  <text style="font-weight:bold">￥：3</text>
+  </view>
+  <view id="content">
+  <text style="font-weight:bold">【任务要求】\n</text>
+  <text>内容\n</text>
+  <text>tips</text>
+  </view>
+
+</view>
