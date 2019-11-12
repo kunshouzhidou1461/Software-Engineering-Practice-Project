@@ -1,0 +1,51 @@
+{
+  "pages": [
+    
+    "pages/index/index",
+    "pages/logs/logs"
+    
+    
+    
+   
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "个人信息",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+
+  "tabBar": {
+    "backgroundColor": "2D3436",
+    "color": "#7f8389",
+    "selectedColor": "#FFFFFF",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "主页",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "市场",
+        "iconPath": "images/任务.png",
+        "selectedIconPath": "images/任务.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "排行榜",
+        "iconPath": "images/排行榜.png",
+        "selectedIconPath": "images/排行榜.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "我的",
+        "iconPath": "images/我的.png",
+        "selectedIconPath": "images/我的.png"
+      }
+    ]
+  }
+}
