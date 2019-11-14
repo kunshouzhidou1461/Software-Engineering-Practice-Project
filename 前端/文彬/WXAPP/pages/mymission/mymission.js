@@ -1,4 +1,4 @@
-// pages/main_page/main_page.js
+// pages/mymission/mission.js
 Page({
 
   /**
@@ -62,15 +62,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-  jump_renwu:function(){
-    wx.switchTab({
-      url: '../mainpage_renwu/mainpage_renwu'
-    })
-  },
-  jump_baike: function () {
-    wx.switchTab({
-      url: '../baike/baike'
-    })
   }
 })

@@ -1,5 +1,4 @@
-/* pages/market/market.wxss */
-@import "./icon/fliter.wxss";
+/* pages/mymission/mission.wxss */
 #task{
   border:2px solid #a1a1a1;
   box-shadow: 10px 10px 5px #888888;
@@ -14,9 +13,3 @@
   color:red;
   font-weight: bold;
 }
-#fliter{
-  float: right;
-}
-.clear { 
-     clear: both; 
- }

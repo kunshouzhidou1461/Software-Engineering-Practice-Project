@@ -1,4 +1,5 @@
-// pages/main_page/main_page.js
+// pages/mainpage_renwu/mainpage_renwu.js
+
 Page({
 
   /**
@@ -63,14 +64,14 @@ Page({
   onShareAppMessage: function () {
 
   },
-  jump_renwu:function(){
+  gomarket: function () {
     wx.switchTab({
-      url: '../mainpage_renwu/mainpage_renwu'
+      url: '../market/market'
     })
   },
-  jump_baike: function () {
-    wx.switchTab({
-      url: '../baike/baike'
+  gome_renwu: function () {
+    wx.redirectTo({
+      url: '../mymission/mymission'
     })
-  }
+  },
 })
