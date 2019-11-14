@@ -1,9 +1,17 @@
 {
   "pages": [
     "pages/main_page/main_page",
+    "pages/mainpage_renwu/mainpage_renwu",
     "pages/market/market",
     "pages/taskDetail/taskDetail",
-    "pages/fliter/fliter"
+    "pages/fliter/fliter",
+    "pages/me_renwu/me_renwu",
+    "pages/mymission/mymission",
+    "pages/chat/chat",
+    "pages/logs/logs",
+    "pages/search_result/search_result",
+    "pages/baike/baike"
+    
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -24,7 +32,7 @@
        "selectedIconPath": "img/首页.png",
        "iconPath": "img/首页.png",
        "text": "主页" ,
-       "pagePath":"pages/main_page/main_page"
+       "pagePath":"pages/mainpage_renwu/mainpage_renwu"
       },
       {
         "selectedIconPath": "img/任务.png",
@@ -36,13 +44,19 @@
         "selectedIconPath": "img/排行榜.png",
         "iconPath": "img/排行榜.png",
         "text": "排行榜",
-        "pagePath":"pages/main_page/main_page"
+        "pagePath":"pages/me_renwu/me_renwu"
+      },
+      {
+        "selectedIconPath": "img/baike.png",
+        "iconPath": "img/baike.png",
+        "text": "百科",
+        "pagePath": "pages/baike/baike"
       },
       {
         "selectedIconPath": "img/我的.png",
         "iconPath": "img/我的.png",
         "text": "我的",
-        "pagePath": "pages/main_page/main_page"
+        "pagePath": "pages/me_renwu/me_renwu"
       }
     ]
   }
