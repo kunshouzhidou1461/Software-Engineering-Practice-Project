@@ -17,5 +17,5 @@
   <text>内容\n</text>
   <text>tips</text>
   </view>
-
+  <button bindtap="goback">确定</button>
 </view>

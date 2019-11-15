@@ -12,4 +12,9 @@ Page({
       url: 'pages/market/market'
     })
   },
+  goback:function(){
+    wx.switchTab({
+      url: '../market/market'
+    })
+  }
 })

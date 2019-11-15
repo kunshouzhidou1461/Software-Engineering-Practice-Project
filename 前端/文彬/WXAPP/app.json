@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/main_page/main_page",
     "pages/mainpage_renwu/mainpage_renwu",
+    "pages/rank/rank",
     "pages/market/market",
     "pages/taskDetail/taskDetail",
     "pages/fliter/fliter",
@@ -44,7 +44,7 @@
         "selectedIconPath": "img/排行榜.png",
         "iconPath": "img/排行榜.png",
         "text": "排行榜",
-        "pagePath":"pages/me_renwu/me_renwu"
+        "pagePath":"pages/rank/rank"
       },
       {
         "selectedIconPath": "img/baike.png",
