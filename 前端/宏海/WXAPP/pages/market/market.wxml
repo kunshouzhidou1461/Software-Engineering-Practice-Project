@@ -1,0 +1,18 @@
+<!--pages/market/market.wxml-->
+<view>
+<text style="color:red;font-weight:bold" decode="true" id="time">{{date}}</text>
+<text class="iconfont icon-shaixuan" bindtap="fliter" id="fliter">筛选任务</text>
+
+<div class="clear"></div>
+
+<block wx:for="{{task}}"  wx:for-item="item" wx:key="11">
+  <view id="task" bindtap="jump" data-taskid="{{item.id}}"> 
+    <text id="task_status" decode="true">&nbsp;&nbsp;&nbsp;&nbsp;状态:{{item.condition}}\n</text>
+    <text>简述:{{item.content}}\n</text>
+    <text></text>
+    <text class="tips">tips:{{item.tips}}\n</text>
+    <view id="money">￥:{{item.money}}</view>
+  </view>
+</block>
+  
+</view>

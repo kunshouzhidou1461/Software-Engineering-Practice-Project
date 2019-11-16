@@ -1,0 +1,55 @@
+<!--index.wxml-->
+<view class="container header">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+</view>
+
+<view class="box"></view>
+<view class="section">
+
+
+  <view class="section-content">
+    <view class="grade">
+      <view class="img">
+        <image src="/images/学校蓝.png" mode='widthFix'></image>
+        <text class="text1">所在年级</text>
+      </view>
+      <text class="text2">2017</text>
+
+    </view>
+
+
+
+
+
+
+    <view class="section1">
+      <view class="section1-left">
+        <image src="/images/灯.png" mode='widthFix'></image>
+        <text>我的百科</text>
+      </view>
+      <view class='arrow'></view>
+    </view>
+    <view class="section1">
+      <view class="section1-left">
+        <image src="/images/意见反馈 (1).png" mode='widthFix'></image>
+        <text>意见反馈</text>
+      </view>
+      <view class='arrow'></view>
+    </view>
+    <view class="section1">
+      <view class="section1-left">
+        <image src="/images/家.png" mode='widthFix'></image>
+        <text>返回主页面</text>
+      </view>
+      <view class='arrow'></view>
+    </view>
+  </view>
+
+
+</view>
