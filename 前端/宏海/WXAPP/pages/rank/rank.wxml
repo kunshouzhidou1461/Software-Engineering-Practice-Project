@@ -1,0 +1,15 @@
+<!--pages/rank/rank.wxml-->
+  <view id="task">
+    <text>venb\n</text>
+    <view id="money">累计金额￥:66666</view>
+  </view>
+
+  <view id="task"> 
+    <text>venb\n</text>
+    <view id="money">累计金额￥:66666</view>
+  </view>
+
+  <view id="task"> 
+    <text>venb\n</text>
+    <view id="money">累计金额￥:66666</view>
+  </view>
