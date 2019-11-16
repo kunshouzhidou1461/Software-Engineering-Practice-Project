@@ -26,4 +26,4 @@
     <text>tips:\n</text>
     <view id="money">￥:3</view>
   </view>
-  
+   <button bindtap="goback">确定</button>

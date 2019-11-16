@@ -18,6 +18,10 @@
 
 <text style="font-weight: bold;" space="emsp"> 热门任务</text>
 <view style="text-align: center;">
-<image src="../../img/mainpage2.png" style="height:150px" style="height:75px"></image>
-<image src="../../img/mainpage3.png" style="height:150px" style="height:75px"></image>
+<view id="img">
+<image src="../../img/mainpage2.png" style="height:70px;width:250px" ></image>
+</view>
+<view id="img">
+<image src="../../img/mainpage3.png" style="height:70px;width:250px" ></image>
+</view>
 </view>
