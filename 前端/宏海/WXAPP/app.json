@@ -1,5 +1,6 @@
 {
   "pages": [
+   
     "pages/mainpage_renwu/mainpage_renwu",
     "pages/rank/rank",
     "pages/market/market",
@@ -10,7 +11,8 @@
     "pages/chat/chat",
     "pages/logs/logs",
     "pages/search_result/search_result",
-    "pages/baike/baike"
+    "pages/baike/baike",
+    "pages/release/release"
     
   ],
   "window": {
