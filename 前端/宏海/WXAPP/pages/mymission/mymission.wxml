@@ -1,29 +1,11 @@
 <!--pages/mymission/mission.wxml-->
-
+<block >
 <view id="task" bindtap="jump"> 
-    <text id="task_status" decode="true">&nbsp;&nbsp;&nbsp;&nbsp;状态:\n</text>
-    <text>内容:\n</text>
-    <text>tips:\n</text>
-    <view id="money">￥:3</view>
+    <text id="task_status" decode="true">&nbsp;&nbsp;&nbsp;&nbsp;状态:{{taskdata.condition}}\n</text>
+    <text>内容:{{taskdata.description}}\n</text>
+    <text class="tips">tips:{{taskdata.tips}}\n</text>
+    <view id="money">￥:{{taskdata.money}}</view>
   </view>
-
-  <view id="task"bindtap="jump"> 
-    <text id="task_status" decode="true">&nbsp;&nbsp;&nbsp;&nbsp;状态:\n</text>
-    <text>内容:\n</text>
-    <text>tips:\n</text>
-    <view id="money">￥:3</view>
-  </view>
-
-  <view id="task"bindtap="jump"> 
-    <text id="task_status" decode="true">&nbsp;&nbsp;&nbsp;&nbsp;状态:\n</text>
-    <text>内容:\n</text>
-    <text>tips:\n</text>
-    <view id="money">￥:3</view>
-  </view>
-  <view id="task"bindtap="jump"> 
-    <text id="task_status" decode="true">&nbsp;&nbsp;&nbsp;&nbsp;状态:\n</text>
-    <text>内容:\n</text>
-    <text>tips:\n</text>
-    <view id="money">￥:3</view>
-  </view>
+</block>
    <button bindtap="goback">确定</button>
+   

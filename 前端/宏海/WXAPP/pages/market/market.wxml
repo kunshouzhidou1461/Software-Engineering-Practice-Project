@@ -5,8 +5,8 @@
 
 <div class="clear"></div>
 
-<block wx:for="{{task}}"  wx:for-item="item" wx:key="11">
-  <view id="task" bindtap="jump" data-taskid="{{item.id}}"> 
+<block wx:for="{{taskData}}"  wx:for-item="item" wx:key="11">
+  <view id="task" bindtap="jump" data-taskid="{{item.id}}" data-taskcondition="{{item.condition}}"> 
     <text id="task_status" decode="true">&nbsp;&nbsp;&nbsp;&nbsp;状态:{{item.condition}}\n</text>
     <text>简述:{{item.content}}\n</text>
     <text></text>

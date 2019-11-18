@@ -1,4 +1,5 @@
 // pages/mymission/mission.js
+var taskData = require("../../data/task-data.js")
 Page({
 
   /**
@@ -12,7 +13,18 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    var taskId = options.id
+    console.log(taskId)
+    var taskdata = taskData.tasklist[taskId]
+    // console.log(taskdata)
+    // console.log(taskdata.condition)
+    var taskconditon = taskdata.condition
+    console.log(taskconditon)
+    this.setData({
+      taskdata,
+     
+      // taskdata.condition:"已接单"
+    })
   },
 
   /**
