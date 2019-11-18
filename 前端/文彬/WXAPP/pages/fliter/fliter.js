@@ -13,9 +13,17 @@ Page({
 
   },
   goBack:function(event){
-    console.log(event)
-    wx.switchTab({
-      url: "../market/market",
+    wx.showToast({
+      title: '筛选成功',
+      icon: 'success',
+      duration: 2000,
+      success: function () {
+        setTimeout(function () {
+          wx.switchTab({
+            url: '../market/market'
+          })
+        }, 1000);
+      }
     })
   },
   bindDateChange: function (e) {

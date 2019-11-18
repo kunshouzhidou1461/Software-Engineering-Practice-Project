@@ -2,9 +2,9 @@
 
 <view id="task" bindtap="jump"> 
     <text id="task_status" decode="true">&nbsp;&nbsp;&nbsp;&nbsp;状态:\n</text>
-    <text>内容:\n</text>
-    <text>tips:\n</text>
-    <view id="money">￥:3</view>
+    <text>内容:{{description}}\n</text>
+    <text>tips:{{tips}}\n</text>
+    <view id="money">￥:{{money}}</view>
   </view>
 
   <view id="task"bindtap="jump"> 

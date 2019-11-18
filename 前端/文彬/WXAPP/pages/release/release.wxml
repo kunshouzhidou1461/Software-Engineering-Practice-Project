@@ -1,0 +1,43 @@
+<form bindsubmit="formSubmit" bindreset="formReset">
+
+  <view class="section">
+    <view class="section__title">任务截止日期</view>
+    <picker mode="date" value="{{date}}" start="" end="" bindchange="bindDateChange">
+      <view class="picker">
+       日期: {{date}}
+     </view>
+    </picker>
+  </view>
+
+  <view class="section">
+  <view class="section__title">任务截止时间</view>
+   <picker mode="time" value="{{time}}" start="06:01" end="23:59" bindchange="bindTimeChange">
+      <view class="picker">
+        时间: {{time}}
+      </view>
+   </picker>
+  </view>
+
+  <view class="section">
+    <view class="section__title">赏金</view>
+    <input placeholder="输入您的赏金" type="digit" name="money">
+    </input>
+  </view>
+
+ <view class="section">
+    <view class="section__title">任务简述</view>
+    <input name="content"></input>
+  </view>
+
+  <view class="section">
+    <view class="section__title">任务详情</view>
+    <input name="description"></input>
+  </view>
+
+ <view id="check">
+    <button formType="submit" class="button">发布</button>
+    <button formType="reset"class="button">重置</button>
+  </view>
+
+
+</form>

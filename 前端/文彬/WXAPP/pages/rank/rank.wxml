@@ -1,5 +1,5 @@
 <!--pages/rank/rank.wxml-->
-  <view id="task">
+  <!-- <view id="task">
     <text>venb\n</text>
     <view id="money">累计金额￥:66666</view>
   </view>
@@ -12,4 +12,57 @@
   <view id="task"> 
     <text>venb\n</text>
     <view id="money">累计金额￥:66666</view>
-  </view>
+  </view> -->
+<view class="top-10">
+			<ul>
+				<li>
+        <a>venb</a>
+        <text>￥666</text>
+        </li>
+
+				<li>
+        <a>venb</a>
+        <text>￥666</text>
+        </li>
+
+				<li>
+        <a>venb</a>
+        <text>￥666</text>
+        </li>
+
+				<li>
+        <a>venb</a>
+        <text>￥666</text>
+        </li>
+				<li>
+        <a>venb</a>
+        <text>￥666</text>
+        </li>
+
+				<li>
+        <a>venb</a>
+        <text>￥666</text>
+        </li>
+
+				<li>
+        <a>venb</a>
+        <text>￥666</text>
+        </li>
+
+				<li>
+        <a>venb</a>
+        <text>￥666</text>
+        </li>
+
+				<li>
+        <a>venb</a>
+        <text>￥666</text>
+        </li>
+
+				<li>
+        <a>venb</a>
+        <text>￥666</text>
+        </li>
+        
+			</ul>
+</view>

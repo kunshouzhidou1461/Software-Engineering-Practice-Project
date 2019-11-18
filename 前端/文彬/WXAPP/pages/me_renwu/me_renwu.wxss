@@ -16,11 +16,6 @@
   color: #aaa;
   font-size: 20px;
 }
-
-.usermotto {
-  margin-top: 200px;
-}
-
 .section-header{
   display: flex;
   justify-content: space-between;
@@ -37,8 +32,8 @@
   display: flex;
   padding-left: 25px;
   /* position: relative; */
-  border-left:thick double green; 
-  border-right:thick double green; 
+  
+  border-right:1 solid green; 
   margin-left:0px;
  
 }
@@ -65,7 +60,7 @@
   line-height: 80rpx;
   display: flex;
   padding-left: 25px;
-  border-right:thick double green; 
+
   /* position: relative; */
 }
 .section-header .right image{
