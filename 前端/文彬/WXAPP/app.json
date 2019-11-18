@@ -1,5 +1,6 @@
 {
   "pages": [
+   
     "pages/mainpage_renwu/mainpage_renwu",
     "pages/rank/rank",
     "pages/market/market",
@@ -10,7 +11,8 @@
     "pages/chat/chat",
     "pages/logs/logs",
     "pages/search_result/search_result",
-    "pages/baike/baike"
+    "pages/baike/baike",
+    "pages/release/release"
     
   ],
   "window": {
@@ -29,8 +31,8 @@
     "backgroundColor": "#FFFFFF",
     "list": [
       {
-       "selectedIconPath": "img/首页.png",
-       "iconPath": "img/首页.png",
+       "selectedIconPath": "img/主页.png",
+       "iconPath": "img/主页.png",
        "text": "主页" ,
        "pagePath":"pages/mainpage_renwu/mainpage_renwu"
       },
@@ -53,8 +55,8 @@
         "pagePath": "pages/baike/baike"
       },
       {
-        "selectedIconPath": "img/我的.png",
-        "iconPath": "img/我的.png",
+        "selectedIconPath": "img/tabBar4.png",
+        "iconPath": "img/tabBar4.png",
         "text": "我的",
         "pagePath": "pages/me_renwu/me_renwu"
       }

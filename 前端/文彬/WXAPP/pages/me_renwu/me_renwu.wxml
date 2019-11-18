@@ -40,8 +40,8 @@
     </view>
     <view class="section1">
       <view class="section1-left">
-        <image src="../../img/lamb.png" mode='widthFix'></image>
-        <text >我的百科</text>
+        <image src="../../img/paper.png" mode='widthFix'></image>
+        <text >草稿箱</text>
       </view>
       <view class='arrow'></view>
     </view>

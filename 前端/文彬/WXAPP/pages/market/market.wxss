@@ -6,6 +6,7 @@
   border-radius: 10px;
   padding: 20px;
   margin: 15px;
+  background-color: rgb(255, 255, 255)
 }
 #money{
   text-align: right
@@ -19,4 +20,11 @@
 }
 .clear { 
      clear: both; 
+ }
+ .tips{
+   font-size:25rpx;
+    color:#a1a1a1;
+ }
+ page{
+   background-color: #F4F4F4
  }

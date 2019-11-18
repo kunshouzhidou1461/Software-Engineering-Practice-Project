@@ -74,4 +74,9 @@ Page({
       url: '../mymission/mymission'
     })
   },
+  gorelease:function(){
+    wx.navigateTo({
+      url: '../release/release',
+    })
+  }
 })

@@ -36,6 +36,9 @@
   padding: 15px;
   margin: 20px;
   width: 80%;
-  height: 100px;
   float: left;
 }
+.tips{
+   font-size:25rpx;
+    color:#a1a1a1;
+ }
