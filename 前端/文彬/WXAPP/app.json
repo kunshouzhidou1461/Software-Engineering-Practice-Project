@@ -12,6 +12,7 @@
     "pages/logs/logs",
     "pages/search_result/search_result",
     "pages/baike/baike",
+    "pages/mymission_history/mymission_history",
     "pages/release/release"
     
   ],

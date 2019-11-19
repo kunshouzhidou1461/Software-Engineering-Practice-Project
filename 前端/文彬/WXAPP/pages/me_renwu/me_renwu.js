@@ -63,4 +63,9 @@ Page({
       url: '../mymission/mymission'
     })
   },
+  gohistory: function () {
+    wx.redirectTo({
+      url: '../mymission_history/mymission_history'
+    })
+  },
 })
