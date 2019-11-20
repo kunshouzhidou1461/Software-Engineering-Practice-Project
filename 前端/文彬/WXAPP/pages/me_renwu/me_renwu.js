@@ -68,4 +68,9 @@ Page({
       url: '../mymission_history/mymission_history'
     })
   },
+  gorank: function () {
+    wx.redirectTo({
+      url: '../rank/rank'
+    })
+  },
 })

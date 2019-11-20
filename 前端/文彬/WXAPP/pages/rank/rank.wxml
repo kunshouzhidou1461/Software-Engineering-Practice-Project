@@ -66,3 +66,4 @@
         
 			</ul>
 </view>
+  <button bindtap="goback">确定</button>

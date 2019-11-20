@@ -46,6 +46,15 @@
       </view>
       <view class='arrow'></view>
     </view>
+
+    <view class="section1">
+      <view class="section1-left">
+        <image src="../../img/rank.png" mode='widthFix' bindtap="gorank"></image>
+        <text bindtap="gorank">排行榜</text>
+      </view>
+      <view class='arrow'></view>
+    </view>
+
      <view class="section1">
       <view class="section1-left">
         <image src="../../img/settings.png" mode='widthFix'></image>

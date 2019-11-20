@@ -14,13 +14,9 @@ function initData(that) {
   msgList = [{
     speaker: 'server',
     contentType: 'text',
-    content: '你好能不能帮我拿个快递呢？'
+    content: '欢迎使用我来帮您'
   },
-  {
-    speaker: 'customer',
-    contentType: 'text',
-    content: '可以啊，是什么快递，手机号多少，拿到哪里。'
-  }
+  
   ]
   that.setData({
     msgList,
@@ -124,7 +120,6 @@ Page({
 
 
   },
-
   /**
    * 退回上一页
    */
