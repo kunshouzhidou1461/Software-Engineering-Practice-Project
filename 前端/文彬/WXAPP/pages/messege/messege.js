@@ -1,4 +1,3 @@
-// pages/mymission/mission.js
 Page({
 
   /**
@@ -63,9 +62,9 @@ Page({
   onShareAppMessage: function () {
 
   },
-  goback: function () {
-    wx.switchTab({
-      url: '../me_renwu/me_renwu'
-    })
+   gochat: function () {
+    wx.redirectTo({
+      url: '../chat/chat'
+  })
   }
 })

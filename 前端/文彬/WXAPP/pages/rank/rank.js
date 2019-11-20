@@ -62,5 +62,10 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  goback: function () {
+    wx.switchTab({
+      url: '../me_renwu/me_renwu'
+    })
   }
 })

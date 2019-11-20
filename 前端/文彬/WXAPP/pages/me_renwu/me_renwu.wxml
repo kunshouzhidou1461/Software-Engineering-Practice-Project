@@ -38,20 +38,23 @@
       </view>
       <view class='arrow'></view>
     </view>
-    <view class="section1">
-      <view class="section1-left">
-        <image src="../../img/paper.png" mode='widthFix'></image>
-        <text >草稿箱</text>
-      </view>
-      <view class='arrow'></view>
-    </view>
+    
      <view class="section1">
       <view class="section1-left">
-        <image src="../../img/history.png" mode='widthFix'></image>
-        <text>历史发布</text>
+        <image src="../../img/history.png" mode='widthFix' bindtap="gohistory"></image>
+        <text bindtap="gohistory">历史发布</text>
       </view>
       <view class='arrow'></view>
     </view>
+
+    <view class="section1">
+      <view class="section1-left">
+        <image src="../../img/rank.png" mode='widthFix' bindtap="gorank"></image>
+        <text bindtap="gorank">排行榜</text>
+      </view>
+      <view class='arrow'></view>
+    </view>
+
      <view class="section1">
       <view class="section1-left">
         <image src="../../img/settings.png" mode='widthFix'></image>
@@ -59,13 +62,7 @@
       </view>
       <view class='arrow'></view>
     </view>
-     <view class="section1">
-      <view class="section1-left">
-        <image src="../../img/mainpage.png" mode='widthFix' bindtap="gomainpage"></image>
-        <text bindtap="gomainpage">返回主页面</text>
-      </view>
-      <view class='arrow'></view>
-    </view>
+     
   </view>
 
 

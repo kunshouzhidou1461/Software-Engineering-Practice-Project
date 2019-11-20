@@ -17,5 +17,8 @@
   <text class="description">{{taskdata.description}}\n</text>
   <text class=".tips">tips:{{taskdata.tips}}</text>
   </view>
-  <button bindtap="goback">接单</button>
+  <view>
+  <button bindtap="chat" id="b1">聊聊</button>
+  <button bindtap="goback" id='b2'>接单</button>
+  </view>
 </view>

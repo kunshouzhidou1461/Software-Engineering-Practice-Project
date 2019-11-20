@@ -42,3 +42,9 @@
    font-size:25rpx;
     color:#a1a1a1;
  }
+ #b1{
+   float: left;
+ }
+ #b2{
+   float: right;
+ }

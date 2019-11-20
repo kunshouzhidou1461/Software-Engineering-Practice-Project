@@ -1,0 +1,15 @@
+/* pages/mymission/mission.wxss */
+#task{
+  border:2px solid #a1a1a1;
+  box-shadow: 10px 10px 5px #888888;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 15px;
+}
+#money{
+  text-align: right
+}
+#task_status{
+  color:red;
+  font-weight: bold;
+}

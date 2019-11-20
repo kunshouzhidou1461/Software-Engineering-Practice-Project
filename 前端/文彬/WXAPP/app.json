@@ -12,6 +12,8 @@
     "pages/logs/logs",
     "pages/search_result/search_result",
     "pages/baike/baike",
+    "pages/mymission_history/mymission_history",
+    "pages/messege/messege",
     "pages/release/release"
     
   ],
@@ -43,10 +45,10 @@
         "pagePath": "pages/market/market"
       },
       {
-        "selectedIconPath": "img/排行榜.png",
-        "iconPath": "img/排行榜.png",
-        "text": "排行榜",
-        "pagePath":"pages/rank/rank"
+        "selectedIconPath": "img/messege.png",
+        "iconPath": "img/messege.png",
+        "text": "消息",
+        "pagePath":"pages/messege/messege"
       },
       {
         "selectedIconPath": "img/baike.png",

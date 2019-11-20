@@ -15,10 +15,18 @@ Page({
     console.log(taskId)
   },
   onUnload: function () {
-    wx.reLaunch({
+    wx.navigateTo({
       url: 'pages/market/market'
     })
   },
+  
+  chat: function (event) {
+    console.log(event)
+    wx.navigateTo({
+      url: '../chat/chat'
+    })
+  },
+
   goback:function(){
     wx.showModal({
       title: '',
@@ -41,6 +49,5 @@ Page({
         }
       }
     })
-    
   }
 })
