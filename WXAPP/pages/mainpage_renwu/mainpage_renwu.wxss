@@ -29,27 +29,12 @@
   margin: 5px;
   text-align: center;
 }
-
 .lunbo{
   width:100%;
- 
+  height:400rpx;
   border-radius:25rpx;
 }
 .lunbo image{
   height: 100%;
-  width:100%;
-}
-
-.lwt{
-  height:400rpx;
-  width:100%;
-   border:5px solid red;
-
-}
-
-.lwt image
-{
- height: 70%;
-  width:70%;
-
+  width: 100%;
 }

@@ -1,21 +1,21 @@
 <view id="container">
   <view id="time">
-  <text style="font-weight:bold">{{taskdata.condition}}\n</text>
-  <text>时效:\n</text>
-  <text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2019.0918\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;to\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2019.0919\n\n\n</text>
-  <icon type="success" size="20px"></icon>
-  <text decode="true">体育&nbsp;代课&nbsp;男</text>
+  <!-- <text style="font-weight:bold">{{taskdata.condition}}\n</text> -->
+  <text>联系方式:{{contactDetail}}</text>
   </view>
+
+
+  
   <view id="user">
-  <text >\nvenb\n</text>
+  <text >发布者：\n{{task.userName}}\n</text>
   </view>
   <view id="money">
-  <text style="font-weight:bold">￥：{{taskdata.money}}</text>
+  <text style="font-weight:bold">￥：{{task.bounty}}</text>
   </view>
   <view id="content">
-  <text style="font-weight:bold">【任务要求】\n</text>
-  <text class="description">{{taskdata.description}}\n</text>
-  <text class=".tips">tips:{{taskdata.tips}}</text>
+  <text style="font-weight:bold">【任务内容】\n</text>
+  <text class="description">{{task.description}}\n</text>
+  <text class=".tips">tips:{{task.tips}}</text>
   </view>
-  <button bindtap="goback">确定</button>
+  <button bindtap="goback" data-taskid="{{task.taskId}}">确定</button>
 </view>

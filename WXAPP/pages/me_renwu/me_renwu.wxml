@@ -1,5 +1,5 @@
 <!--index.wxml-->
-<view class="container header">
+<view class=" header">
   <view class="userinfo">
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
     <block wx:else>
@@ -8,6 +8,7 @@
     </block>
   </view>
 </view>
+<view class="info" bindtap="toinfo">填写详尽信息</view>
 
 <view class="section">
   <view class="section-header">

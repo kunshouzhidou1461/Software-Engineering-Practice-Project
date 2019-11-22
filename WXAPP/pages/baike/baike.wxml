@@ -1,7 +1,4 @@
 <!--pages/baike/baike.wxml-->
-
-
-
 <view id="search_container">
  <view class='page_row' bindtap="bindButtonTap">  
       <view class="search">  
@@ -17,18 +14,3 @@
       <view class='sousuo' bindtap="search">搜索</view>  
    </view>
 </view>
-
-<view class="ditu">
-
-   <image src="../../img/ditu2.png"></image>
-</view>
-
-<view class="ditu2">
-
-   <image src="../../img/lwt3.png"></image>
-</view>
-
-<!-- <view class="ditu3">
-
-   <image src="../../img/ditu2.png"></image>
-</view> -->

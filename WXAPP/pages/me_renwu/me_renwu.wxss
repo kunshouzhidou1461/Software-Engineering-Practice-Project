@@ -1,10 +1,16 @@
 /**index.wxss**/
+.header{
+  padding: 100rpx 0;
+}
 .userinfo {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
+.info{
+  margin-bottom: 50rpx;
+  text-align: center;
+}
 .userinfo-avatar {
   width: 200rpx;
   height: 200rpx;

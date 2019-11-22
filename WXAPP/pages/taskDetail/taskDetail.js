@@ -2,35 +2,76 @@ const app = getApp()
 var taskData = require("../../data/task-data.js")
 Page({
   data: {
-
+    task: [],
+    
   },
   onLoad: function (options) {
-    var taskId = options.id
-    var taskCondition = options.condition
-    console.log(taskCondition)
-    var taskdata = taskData.tasklist[taskId]
+    var contactDetail = app.globalData.contactDetail
     this.setData({
-      taskdata
-      })
-    console.log(taskId)
+      contactDetail
+    })
+    var taskindex = options.index
+    console.log(taskindex)
+    wx.request({
+      url: 'https://www.dicky99.xyz:8080/task/all',
+      method: 'GET',
+      success: res => {
+        console.log(res.data)
+
+        this.setData({
+
+          task: res.data[taskindex]
+
+
+        })
+      },
+    })
+
+    // var taskdata = taskData.tasklist[taskId]
+    // this.setData({
+    //   taskdata
+    // })
   },
   onUnload: function () {
     wx.reLaunch({
       url: 'pages/market/market'
     })
   },
-  goback:function(){
+  goback: function (e) {
+    // console.log(e)
+    var taskId = e.currentTarget.dataset.taskid
+    // console.log(taskId)
+
     wx.showModal({
       title: '',
       content: '是否接单',
-      success(res){
-        if(res.confirm){
-          wx.switchTab({
-            url: '../market/market'
+      success(res) {
+        if (res.confirm) {
+
+          wx.request({
+            url: 'https://www.dicky99.xyz:8080/task/acceptTask?taskId=' + taskId + '&userId=' + app.globalData.userid,
+            method: 'POST',
+            success: function (res) {
+              console.log(res.data)
+              if(res.data.status=="error"){
+                wx.showToast({
+                  title: '任务已经被接取！',
+                  image:'/img/fail.png'
+                })
+              }    //若任务被人接取提示任务已经被人接取
+              else if(res.data.status == "success")
+              {
+                wx.showToast({
+                  title: '成功接取任务',
+                
+                }) //接取成功提示
+              
+              }          
+            },
           })
+
         }
-      }
+        }
     })
-    
-  }
+    }
 })

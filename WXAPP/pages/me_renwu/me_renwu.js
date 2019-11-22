@@ -63,4 +63,9 @@ Page({
       url: '../mymission/mymission'
     })
   },
+  toinfo:function(){
+    wx.navigateTo({
+      url: '../userinfo/userinfo',
+    })
+  }
 })

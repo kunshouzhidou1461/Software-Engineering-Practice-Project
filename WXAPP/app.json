@@ -1,6 +1,8 @@
 {
   "pages": [
-   
+    
+    "pages/goaccepted/goaccepted",
+    "pages/userinfo/userinfo",
     "pages/mainpage_renwu/mainpage_renwu",
     "pages/rank/rank",
     "pages/market/market",
@@ -12,7 +14,8 @@
     "pages/logs/logs",
     "pages/search_result/search_result",
     "pages/baike/baike",
-    "pages/release/release"
+    "pages/release/release",
+    "pages/messege/messege"
     
   ],
   "window": {
@@ -43,10 +46,10 @@
         "pagePath": "pages/market/market"
       },
       {
-        "selectedIconPath": "img/排行榜.png",
-        "iconPath": "img/排行榜.png",
-        "text": "排行榜",
-        "pagePath":"pages/rank/rank"
+        "selectedIconPath": "img/messege.png",
+        "iconPath": "img/messege.png",
+        "text": "消息",
+        "pagePath": "pages/messege/messege"
       },
       {
         "selectedIconPath": "img/baike.png",

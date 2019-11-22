@@ -1,29 +1,17 @@
 <!--pages/mymission/mission.wxml-->
+<block wx:for="{{task}}"  wx:for-item="item" wx:key="11"> 
+<view id="task" bindtap="del" data-taskid="{{item.taskId}}"> 
+    <text id="task_status" decode="true">&nbsp;&nbsp;&nbsp;&nbsp;状态:{{item.isAccept}}</text>
+    <text class="tips" decode="true">&nbsp;&nbsp;&nbsp;&nbsp;发布于：{{item.postAt}}\n</text>
+    <text>内容:{{item.description}}\n</text>
+    <text class="tips">tips:{{item.tips}}\n</text>
+    <view id="money">￥:{{item.bounty}}</view>
+  </view>
+  <view bindtap="delete">删除</view>
 
-<view id="task" bindtap="jump"> 
-    <text id="task_status" decode="true">&nbsp;&nbsp;&nbsp;&nbsp;状态:\n</text>
-    <text>内容:{{description}}\n</text>
-    <text>tips:{{tips}}\n</text>
-    <view id="money">￥:{{money}}</view>
-  </view>
+ 
+</block>
 
-  <view id="task"bindtap="jump"> 
-    <text id="task_status" decode="true">&nbsp;&nbsp;&nbsp;&nbsp;状态:\n</text>
-    <text>内容:\n</text>
-    <text>tips:\n</text>
-    <view id="money">￥:3</view>
-  </view>
+<button bindtap="tiao">已接单</button>
 
-  <view id="task"bindtap="jump"> 
-    <text id="task_status" decode="true">&nbsp;&nbsp;&nbsp;&nbsp;状态:\n</text>
-    <text>内容:\n</text>
-    <text>tips:\n</text>
-    <view id="money">￥:3</view>
-  </view>
-  <view id="task"bindtap="jump"> 
-    <text id="task_status" decode="true">&nbsp;&nbsp;&nbsp;&nbsp;状态:\n</text>
-    <text>内容:\n</text>
-    <text>tips:\n</text>
-    <view id="money">￥:3</view>
-  </view>
-   <button bindtap="goback">确定</button>
+   
