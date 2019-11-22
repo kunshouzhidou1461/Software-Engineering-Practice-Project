@@ -42,3 +42,8 @@
    font-size:25rpx;
     color:#a1a1a1;
  }
+ button{
+   position: relative;
+   left: 25%;
+   top:50rpx;
+ }

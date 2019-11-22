@@ -1,19 +1,54 @@
 /* pages/mymission/mission.wxss */
-#task{
-  border:2px solid #a1a1a1;
-  box-shadow: 10px 10px 5px #888888;
-  border-radius: 10px;
-  padding: 20px;
-  margin: 15px;
+
+#task {
+  border: 2rpx solid #a1a1a1;
+  box-shadow: 10rpx 10rpx 5rpx #888;
+  border-radius: 10rpx;
+  padding: 20rpx;
+  margin: 15rpx;
+  margin-bottom: 50rpx;
 }
-#money{
-  text-align: right
+
+#money {
+  text-align: right;
 }
-#task_status{
-  color:red;
+
+#task_status {
+  color: red;
   font-weight: bold;
 }
-.tips{
-   font-size:25rpx;
-    color:#a1a1a1;
- }
+
+.tips {
+  font-size: 25rpx;
+  color: #a1a1a1;
+}
+
+.swiper-tab {
+  width: 100%;
+  border-bottom: 2rpx solid #777;
+  text-align: center;
+  line-height: 80rpx;
+}
+
+.swiper-tab-list {
+  font-size: 30rpx;
+  display: inline-block;
+  width: 33.33%;
+  color: #777;
+}
+
+.on {
+  color: #da7c0c;
+  border-bottom: 5rpx solid #da7c0c;
+}
+
+.swiper-box {
+  display: block;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.swiper-box view {
+  text-align: center;
+}

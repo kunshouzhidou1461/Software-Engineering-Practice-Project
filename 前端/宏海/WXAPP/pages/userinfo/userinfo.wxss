@@ -1,0 +1,4 @@
+/* pages/userinfo/userinfo.wxss */
+button{
+  margin-top: 500rpx;
+}

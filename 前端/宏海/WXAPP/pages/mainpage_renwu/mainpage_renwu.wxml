@@ -1,5 +1,30 @@
-<!--pages/mainpage_renwu/mainpage_renwu.wxml-->
-<image src="../../img/mainpage1.png" style="height:130px;width:100%"></image>
+<!--pages/mainpage_renwu/mainpage_renwu.wxml--> 
+<swiper class='lunbo' indicator-dots='true' autoplay='true' interval='4000'>
+       <swiper-item> <image src='../../img/lunbo1.png'></image> </swiper-item>
+       <swiper-item> <image   src='../../img/lunbo2.png'></image></swiper-item>
+      </swiper>
+
+
+
+<!-- 提示框  -->
+<view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+<view class="modal-dialog" wx:if="{{showModal}}">
+  <view class="modal-title">请先授权并登陆</view>
+
+ 
+     
+  
+
+  <view class="modal-footer">
+    <view class="btn-cancel" bindtap="onCancel" data-status="cancel">好的</view>
+
+  </view>
+</view>
+
+
+
+<!-- 正文 -->
+
 <view id="icon_view">
 <text class="iconfont icon-p2" id="icon" bindtap="gomarket"></text>
 <text class="iconfont icon-p3" id="icon" bindtap="gorelease"></text>
@@ -25,3 +50,8 @@
 <image src="../../img/mainpage3.png" style="height:70px;width:250px" ></image>
 </view>
 </view>
+
+
+
+
+

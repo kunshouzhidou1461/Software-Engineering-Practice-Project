@@ -1,21 +1,59 @@
 // pages/mainpage_renwu/mainpage_renwu.js
-
+const app = getApp()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    showModalStatus: false,
+    hiddenb:false,
+     showModal: false,
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
+
   onLoad: function (options) {
-
+    if (app.globalData.userid != 0) {
+      this.setData({
+        hiddenb:true
+      })
+    }
+    console.log(app.globalData.userid)
+    if (app.globalData.userid ==0){
+      // wx.showToast({
+      //   title: '去我的进行登录 ',
+      //   icon:"warning",
+      //   duration:3000
+      // })
+      this.setData({
+        showModal:true
+      })
+    }   ///改
   },
-
+  /**
+   * 弹出框蒙层截断touchmove事件
+   */
+  preventTouchMove: function () {
+  },
+  /**
+   * 隐藏模态对话框
+   */
+  hideModal: function () {
+    this.setData({
+      showModal: false
+    });
+  },
+  /**
+    * 对话框取消按钮点击事件
+    */
+  onCancel: function () {
+    this.hideModal();
+  },
+  
+ 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
@@ -70,7 +108,7 @@ Page({
     })
   },
   gome_renwu: function () {
-    wx.redirectTo({
+    wx.navigateTo({
       url: '../mymission/mymission'
     })
   },

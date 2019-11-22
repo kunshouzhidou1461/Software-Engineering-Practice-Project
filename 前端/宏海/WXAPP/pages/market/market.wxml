@@ -5,14 +5,17 @@
 
 <div class="clear"></div>
 
-<block wx:for="{{taskData}}"  wx:for-item="item" wx:key="11">
-  <view id="task" bindtap="jump" data-taskid="{{item.id}}" data-taskcondition="{{item.condition}}"> 
-    <text id="task_status" decode="true">&nbsp;&nbsp;&nbsp;&nbsp;状态:{{item.condition}}\n</text>
-    <text>简述:{{item.content}}\n</text>
+<block wx:for="{{task}}"  wx:for-item="item" wx:key="11">
+  <view id="task" bindtap="jump" data-taskid="{{index}}" data-isAccept="{{item.isAccept}}"> 
+    <text id="task_status" decode="true">&nbsp;&nbsp;&nbsp;&nbsp;状态:{{item.isAccept}}\n</text>
+    <text>简述:{{item.title}}\n</text>
     <text></text>
     <text class="tips">tips:{{item.tips}}\n</text>
-    <view id="money">￥:{{item.money}}</view>
+    <view id="money">￥:{{item.bounty}}</view>
+    NO.{{index}}
   </view>
 </block>
-  
+
+
+  <!-- <view bindtap="search">查看</view> -->
 </view>

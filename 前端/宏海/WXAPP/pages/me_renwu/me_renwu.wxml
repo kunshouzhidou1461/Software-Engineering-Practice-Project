@@ -1,5 +1,5 @@
 <!--index.wxml-->
-<view class="container header">
+<view class=" header">
   <view class="userinfo">
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
     <block wx:else>
@@ -8,6 +8,63 @@
     </block>
   </view>
 </view>
+
+<view>
+<button bindtap="sign" hidden="{{hidden}}" >已注册过？点击此处登陆</button>
+
+</view>
+
+<view >
+
+
+</view>
+
+
+
+<view class="info1" >
+<view class="info" bindtap="powerDrawer" data-statu="open">填写详尽信息</view>
+<image src="../../img/edit.png" ></image>
+</view>
+
+<!--mask-->  
+<view class="drawer_screen" bindtap="powerDrawer" data-statu="close" wx:if="{{showModalStatus}}"></view>  
+<!--content-->  
+<!--使用animation属性指定需要执行的动画-->  
+<view animation="{{animationData}}" class="drawer_box" wx:if="{{showModalStatus}}">  
+  
+  <!--drawer content-->  
+  <form bindsubmit="formSubmit" bindreset="formReset">
+  <view class="drawer_title">弹窗标题</view>  
+  <view class="drawer_content">  
+    <view class="top grid">  
+      <label class="title col-0">联系方式：</label>  
+      <radio-group name="contactType"class="radio">
+      <label><radio value="QQ" class="radio1"/>QQ</label>
+      <label><radio value="手机"class="radio1"/>手机</label>
+      </radio-group>  
+    </view>  
+
+    <view class="top grid">  
+      <label class="title col-0">具体联系：</label>  
+      <input  type="number" name="contactDetail" class="input_base input_h30 col-1"/>
+    </view>  
+    <view class="top grid">  
+      <label class="title col-0">性别：</label>  
+        <radio-group name="userSex" class="radio">
+      <label><radio value="女"class="radio1"/>女</label>
+      <label><radio value="男"class="radio1"/>男</label>
+    </radio-group>
+     
+    </view>  
+    
+  </view>  
+  <button class="btn_ok" formType="submit" data-statu="close">确定</button> 
+     <!-- <button bindtap="del">删除</button> -->
+  </form> 
+</view>
+
+
+
 
 <view class="section">
   <view class="section-header">
