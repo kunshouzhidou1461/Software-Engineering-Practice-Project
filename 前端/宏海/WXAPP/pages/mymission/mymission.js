@@ -1,5 +1,5 @@
 // pages/mymission/mission.js
-var taskData = require("../../data/task-data.js")
+
 const app = getApp()
 Page({
 
@@ -33,41 +33,22 @@ Page({
       url: '/pages/goaccepted/goaccepted',
     })
   },
-  del: function(e) {
-    console.log(e)
-    var taskid = e.currentTarget.dataset.taskid
+  jump: function (event) {
+    console.log(event)
+    var taskid = event.currentTarget.dataset.taskid
     console.log(taskid)
-   
-    wx.showModal({
-      title: '',
-      content: '是否删除任务',
-      success(res) {
-        if (res.confirm) {
-          wx.request({
-            url: 'https://www.dicky99.xyz:8080/task/del/' + taskid, //是taskid,
-            method: 'GET',
-            success: res => {
-              console.log(res.data)
-              wx.showToast({
-                title: '删除成功',
-              })
-            },
-            fail: function (erro) {
-              console.log(erro)
-            }
-          })
-          
-        }
-         else if (res.cancel) {
-          console.log('用户点击取消')
-        }
-      },
+    wx.navigateTo({
+      url: '../released_detail/released_detail?taskid=' + taskid,
     })
+
   },
+
+  
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
+    console.log(app.globalData.userid)
     wx.request({
       url: 'https://www.dicky99.xyz:8080/task/getAcceptedTasksById/' + app.globalData.userid,
       method: 'GET',
@@ -98,10 +79,21 @@ Page({
       method: 'GET',
       success: res => {
         console.log(res.data)
-        that.setData({
-          task: res.data
-
+        var type1 = "未接单"
+        var type2 = "已接单"
+        for (var i = 0; i < res.data.length; i++) {
+          if (res.data[i].status == "0") {
+            res.data[i].type = type1
+          }
+          else if (res.data[i].status == "1") {
+            res.data[i].type = type2
+          }
+        }
+        this.setData({
+          task: res.data,
         })
+
+
 
        
       },
@@ -121,26 +113,14 @@ Page({
 
   },  
   swichNav: function (e) {
-
-
-
     var that = this;
-
-
-
     if (this.data.currentTab === e.target.dataset.current) {
-
       return false;
-
     } 
     else {
-
       that.setData({
-
         currentTab: e.target.dataset.current
-
       })
-
     }
 
   },

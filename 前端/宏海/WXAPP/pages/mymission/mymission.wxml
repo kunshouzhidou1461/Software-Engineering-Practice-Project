@@ -1,11 +1,7 @@
 <!--pages/mymission/mission.wxml-->
 <view class="swiper-tab">  
-
-    <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">已发布</view>  
-
-    <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">已接单</view>  
-
-
+    <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">已发布</view> 
+    <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">已接单</view> 
 </view>  
 
   
@@ -15,19 +11,15 @@
     <!-- 我是哈哈 -->  
 
     <swiper-item>  
-
      <block wx:for="{{task}}"  wx:for-item="item" wx:key="11" hidden="{{hidden}}" > 
-<view id="task" bindtap="del" data-taskid="{{item.taskId}}" > 
-    <text id="task_status" decode="true">&nbsp;&nbsp;&nbsp;&nbsp;状态:{{item.isAccept}}</text>
+<view id="task" bindtap="jump" data-taskid="{{item.taskId}}" > 
+    <text id="task_status" decode="true">&nbsp;&nbsp;&nbsp;&nbsp;状态:{{item.type}}</text>
     <text class="tips" decode="true">&nbsp;&nbsp;&nbsp;&nbsp;发布于：{{item.postAt}}\n</text>
     <text>内容:{{item.description}}\n</text>
     <text class="tips">tips:{{item.tips}}\n</text>
     <view id="money">￥:{{item.bounty}}</view>
   </view>
-
- 
 </block> 
-
     </swiper-item>  
 
     <!-- 我是呵呵 -->  
@@ -54,6 +46,6 @@
 
 
 
-<!-- <button bindtap="tiao">已接单</button> -->
+<button bindtap="tiao">已接单</button>
 
    

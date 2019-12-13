@@ -3,16 +3,16 @@
 
   <view class="section">
     <view class="section__title">姓名</view>
-      <input name="nickname" disabled="true" placeholder="{{nickname}}">{{nickname}}</input>
-    </view>
+    <input name="nickname" disabled="true" placeholder="{{nickname}}">{{nickname}}</input>
+  </view>
 
-    <view class="section">
+  <view class="section">
     <view class="section__title">联系方式</view>
-      <input name="contactDetail" disabled="true" placeholder="{{contactDetail}}">{{contactDetail}}</input>
-    </view>
+    <input name="contactDetail" disabled="true" placeholder="{{contactDetail}}">{{contactDetail}}</input>
+  </view>
 
 
-    <!-- <view class="section">
+  <!-- <view class="section">
       <view class="section__title">任务截止日期</view>
       <picker mode="date" value="{{date}}" start="" end="" bindchange="bindDateChange">
         <view class="picker">
@@ -21,7 +21,7 @@
       </picker>
     </view> -->
 
-    <!-- <view class="section">
+  <!-- <view class="section">
       <view class="section__title">任务截止时间</view>
       <picker mode="time" value="{{time}}" start="06:01" end="23:59" bindchange="bindTimeChange">
         <view class="picker">
@@ -30,31 +30,41 @@
       </picker>
     </view> -->
 
-    <view class="section">
-      <view class="section__title">赏金</view>
-      <input placeholder="输入您的赏金" type="digit" name="bounty">
-      </input>
-    </view>
+  <view class="section">
+    <view class="section__title">赏金</view>
+    <input placeholder="输入您的赏金" type="digit" name="bounty">
+    </input>
+  </view>
 
     <view class="section">
-      <view class="section__title">任务标题</view>
-      <input name="title"></input>
-    </view>
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+      <view class="section__title" name="category">
+        任务类型：{{array[index]}}
+      </view>
+    </picker>
+  </view>
 
-    <view class="section">
-      <view class="section__title">任务详情</view>
-      <input name="description"></input>
-    </view>
+  <view class="section">
+    <view class="section__title">任务标题</view>
+    <input name="title"></input>
+  </view>
 
-    <view class="section">
-      <view class="section__title">tips</view>
-      <input name="tips"></input>
-    </view>
+  <view class="section">
+    <view class="section__title">任务详情</view>
+    <input name="description"></input>
+  </view>
 
-    <view id="check">
-      <button formType="submit" class="button">发布</button>
-      <button formType="reset" class="button">重置</button>
-    </view>
+  <view class="section">
+    <view class="section__title">tips</view>
+    <input name="tips"></input>
+  </view>
 
+
+
+  <view id="check">
+    <button formType="submit" class="button">发布</button>
+    <button formType="reset" class="button">重置</button>
+  </view>
+<view>{{bounty}}</view>
 
 </form>

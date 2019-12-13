@@ -135,6 +135,41 @@
 					"id": -1,
 					"name": "pages/me_renwu/me_renwu",
 					"pathName": "pages/me_renwu/me_renwu",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/released_detail/released_detail",
+					"pathName": "pages/released_detail/released_detail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/baike/baike",
+					"pathName": "pages/baike/baike",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/search_result/search_result",
+					"pathName": "pages/search_result/search_result",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/market/market",
+					"pathName": "pages/market/market",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/released_detail/released_detail",
+					"pathName": "pages/released_detail/released_detail",
 					"scene": null
 				}
 			]

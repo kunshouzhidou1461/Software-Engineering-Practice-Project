@@ -1,13 +1,44 @@
 <!--pages/market/market.wxml-->
 <view>
-<text style="color:red;font-weight:bold" decode="true" id="time">{{date}}</text>
-<text class="iconfont icon-shaixuan" bindtap="fliter" id="fliter">筛选任务</text>
+
+<view class="tabTit box">
+  <view class="flex1{{!tab[index]?' active':''}}" wx:for="{{tabTxt}}" wx:key="type" data-index="{{index}}" bindtap="filterTab">
+    <text>{{item}}</text>
+    <image src="/img/arrow.png"></image>
+  </view>
+</view>
+
+<!--筛选项-->
+<view class="tabLayer" hidden="{{tab[0]}}">
+    <text class="{{category_id==0?'active':''}}" data-id="0" data-index="0" data-txt="类型" bindtap="filter">不限</text>
+    <text class="{{category_id==item.id?'active':''}}" wx:for="{{categoryList}}" wx:key="pp" wx:for-item="item" data-id="{{item.id}}" data-index="0" data-txt="{{item.title}}" bindtap="filter">{{item.title}}</text>
+</view>
+
+<view class="tabLayer" hidden="{{tab[1]}}">
+    <text class="{{jiage_id==0?'active':''}}" data-id="0" data-index="1" data-txt="排序方式" bindtap="filter">不限</text>
+    <text class="{{jiage_id==1?'active':''}}" data-id="1" data-index="1" data-txt="发布时间" bindtap="filter">发布时间</text>
+    <text class="{{jiage_id==2?'active':''}}" data-id="2" data-index="1" data-txt="赏金金额" bindtap="filter">赏金金额</text>
+    <text class="{{jiage_id==3?'active':''}}" data-id="3" data-index="1" data-txt="信用度" bindtap="filter">信用度</text>
+</view>
+
+<view class="tabLayer" hidden="{{tab[2]}}">
+    <text class="{{xiaoliang_id==0?'active':''}}" data-id="0" data-index="2" data-txt="排序" bindtap="filter">不限</text>
+    <text class="{{xiaoliang_id==1?'active':''}}" data-id="1" data-index="2" data-txt="从高到低" bindtap="filter">从高到低</text>
+    <text class="{{xiaoliang_id==2?'active':''}}" data-id="2" data-index="2" data-txt="从低到高" bindtap="filter">从低到高</text>
+</view>
+
+<view class="tabLayer" hidden="{{tab[3]}}">
+    <text class="{{xiaoliang_id==0?'active':''}}" data-id="0" data-index="3" data-txt="状态" bindtap="filter">不限</text>
+    <text class="{{xiaoliang_id==1?'active':''}}" data-id="1" data-index="3" data-txt="已接单" bindtap="filter">已接单</text>
+    <text class="{{xiaoliang_id==2?'active':''}}" data-id="2" data-index="3" data-txt="未接单" bindtap="filter">未接单</text>
+</view>
+
 
 <div class="clear"></div>
 
 <block wx:for="{{task}}"  wx:for-item="item" wx:key="11">
-  <view id="task" bindtap="jump" data-taskid="{{index}}" data-isAccept="{{item.isAccept}}"> 
-    <text id="task_status" decode="true">&nbsp;&nbsp;&nbsp;&nbsp;状态:{{item.isAccept}}\n</text>
+  <view id="task" bindtap="jump" data-taskid="{{item.taskId}}" data-status="{{item.status}}"> 
+    <text id="task_status" decode="true">&nbsp;&nbsp;&nbsp;&nbsp;状态:{{item.type}}\n</text>
     <text>简述:{{item.title}}\n</text>
     <text></text>
     <text class="tips">tips:{{item.tips}}\n</text>

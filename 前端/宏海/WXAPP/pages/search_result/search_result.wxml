@@ -1,2 +1,12 @@
-<!--pages/search_result/search_result.wxml-->
-<text>这是结果</text>
+<view class="search_head">
+  <text class="search_title">{{bake.title}}</text>
+</view>
+
+<view class="search_content">
+  <text class="search_detali" decode="{{true}}"> {{bake.search_detail}} </text>
+
+  <view class="tips">
+    <view class="tips_head">{{bake.tip}}</view>
+    <text class="tips_detali" decode="{{true}}">{{bake.tips_detail}}</text>
+  </view>
+</view>

@@ -3,7 +3,7 @@
     "pages/mainpage_renwu/mainpage_renwu",
     "pages/goaccepted/goaccepted",
     "pages/userinfo/userinfo",
-    
+    "pages/released_detail/released_detail",
     "pages/rank/rank",
     "pages/market/market",
     "pages/taskDetail/taskDetail",

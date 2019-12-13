@@ -1,46 +1,83 @@
 /* pages/baike/baike.wxss */
-.search{  
-      width: 80%;  
-    }  
-    .search_arr {  
-      border: 1px solid #d0d0d0;  
-      border-radius: 10rpx;  
-      margin-left: 20rpx;  
-    }  
-    .search_arr input{  
-      margin-left: 60rpx;  
-      height: 60rpx;  
-      border-radius: 5px;  
-    }  
-    .bc_text {  
-      line-height: 68rpx;  
-      height: 68rpx;  
-      margin-top: 34rpx;  
-    }  
-    
-    .sousuo {  
-      margin-left: 15rpx;  
-      width: 15%;  
-      line-height: 150%;  
-      text-align: center;  
-      border: 1px solid #d0d0d0;  
-      border-radius: 10rpx;  
-      font-weight: bold;
-    }  
-    .page_row{  
-      display: flex;  
-      flex-direction: row  
-    }  
-    .searchcion {  
-      margin: 10rpx 10rpx 10rpx 10rpx;  
-      position: absolute;  
-      left:25rpx;  
-      z-index: 2;  
-      width: 20px;  
-      height: 20px;  
-      text-align: center;  
-    } 
-    #search_container{
-      position: relative;
-      top: 100px;
-    }
+
+.search {
+  width: 80%;
+
+  margin: 0 auto;
+}
+
+.search_arr {
+  border: 1px solid #d0d0d0;
+  border-radius: 10rpx;
+  background-color: white;
+  margin-top: 8rpx;
+}
+
+.search_arr input {
+  margin-left: 60rpx;
+  height: 60rpx;
+  border-radius: 5px;
+}
+
+.bc_text {
+  line-height: 68rpx;
+  height: 68rpx;
+  margin-top: 34rpx;
+}
+
+.sousuo {
+  margin-left: 15rpx;
+  width: 15%;
+  line-height: 150%;
+  text-align: center;
+  border: 1px solid #d0d0d0;
+  border-radius: 10rpx;
+  font-weight: bold;
+}
+
+.page_row {
+  display: flex;
+  flex-direction: row;
+}
+
+.searchcion {
+  margin: 10rpx 10rpx 10rpx 10rpx;
+  position: absolute;
+  left: 75rpx;
+  z-index: 2;
+  width: 20px;
+  height: 20px; 
+  text-align: center;
+}
+
+#search_container {
+  position: relative;
+  height:80rpx;
+  background-color: #E5E5E5
+}
+.search_content{
+  /* position: flex;
+  flex-direction: row; */
+  position: relative;
+  left: 20rpx;
+}
+.search_item{
+  border-bottom: 1px #E5E5E5 solid;
+  width: auto;
+  height: 75rpx;
+  line-height: 75rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 28rpx;
+}
+.arrow{ 
+
+width: 8px;
+height: 8px;
+border-top: 1.5px solid #999;
+border-right: 1.5px solid #999;   
+transform: rotate(45deg);
+margin-top:28rpx;
+margin-right: 45rpx; 
+}

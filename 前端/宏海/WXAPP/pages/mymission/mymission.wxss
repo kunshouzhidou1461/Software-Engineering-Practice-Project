@@ -38,8 +38,8 @@
 }
 
 .on {
-  color: #da7c0c;
-  border-bottom: 5rpx solid #da7c0c;
+  color: #74B9F4;
+  border-bottom: 5rpx solid #74B9F4;
 }
 
 .swiper-box {

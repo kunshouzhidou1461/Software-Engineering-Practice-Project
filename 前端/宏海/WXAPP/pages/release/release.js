@@ -4,10 +4,10 @@ const app = getApp()
 Page({
   data: {
   
-    date: '2019-11-11',
-    time: '12:00',
+   
     // app_openid: app_openid
-
+    array: ['快递', '拼车', '代课', '其他'],
+    index: 0,
   },
   onLoad: function () {
     // console.log(app.globalData.userid)
@@ -26,27 +26,39 @@ Page({
       contactDetail
     })
   },
- 
+
+
+  bindPickerChange: function (e) {
+
+    console.log('picker发送选择改变，携带值为', e.detail.value)
+    this.setData({
+      index: e.detail.value
+    })
+  },
+
+
   formSubmit: function (e) {
-    if (e.detail.value.description.length == 0){
-      wx.showToast({
-        title: '任务详情不能为空',
-        image: '/img/fail.png'
-      })
-    }
-    else if (e.detail.value.title.length == 0){
-      wx.showToast({
-        title: '任务标题不能为空',
-        image: '/img/fail.png'
-      })
-    }
-    else if (e.detail.value.bounty.length == 0){
-      wx.showToast({
-        title: '赏金不能为空',
-        image: '/img/fail.png'
-      })
-    }
-    else{
+    var category = this.data.index;
+    // if (e.detail.value.description.length == 0){
+    //   wx.showToast({
+    //     title: '任务详情不能为空',
+    //     image: '/img/fail.png'
+    //   })
+    // }
+    // else if (e.detail.value.title.length == 0){
+    //   wx.showToast({
+    //     title: '任务标题不能为空',
+    //     image: '/img/fail.png'
+    //   })
+    // }
+    // else if (e.detail.value.bounty.length == 0){
+    //   wx.showToast({
+    //     title: '赏金不能为空',
+    //     image: '/img/fail.png'
+    //   })
+    // }
+    // else{
+
     wx.request({
       url: 'https://www.dicky99.xyz:8080/task/publish',
       data: {
@@ -55,7 +67,8 @@ Page({
         'description': e.detail.value.description,
         'title': e.detail.value.title,
         'userId': app.globalData.userid,
-        "tips": e.detail.value.tips
+        "tips": e.detail.value.tips,
+        "category": category
       },
       method: 'POST',
       headers:
@@ -64,6 +77,7 @@ Page({
       },
       success: function (res) {
         console.log(res.data)
+       // console.log("type打印出来", type)
         if (res.data.status =="success"){
           wx.showToast({
             title: '发布成功',
@@ -83,39 +97,10 @@ Page({
     wx.switchTab({
       url: '/pages/market/market',
     })
-    }
-  //   var warn = "";//弹框时提示的内容
-  //   var flag = true;//判断信息输入是否完整
-    
-  //   if (e.detail.value.bounty == "") {
-  //     warn = "请填写您的赏金！";
-  //   } else if (e.detail.value.content == '') {
-  //     warn = "请填写您的任务简述"
-  //   } else if (e.detail.value.description == "") {
-  //     warn = "请输入您的任务详情";
-  //   } else {
-  //     flag = false;//若必要信息都填写，则不用弹框，且页面可以进行跳转
-
-  //     var that = this;
-  //     //？后面跟的是需要传递到下一个页面的参数
-  //     wx.switchTab({
-  //       url: '../market/market' ,
-  //       success:function(e){
-  //         var page = getCurrentPages().pop();
-  //         if(page == undefined||page == null)return;
-  //         page.onLoad();
-  //       }
-  //     })
+    // }
+  
       console.log('form发生了submit事件，携带数据为：', e.detail.value);
-  //   }
-  //   //如果信息填写不完整，弹出输入框
-  //   if (flag == true) {
-  //     wx.showModal({
-  //       title: '提示',
-  //       content: warn
-  //     })
-  //   }
-
+   
    
   },
 
@@ -138,10 +123,5 @@ Page({
       time: e.detail.value
     })
   },
-  bindPickerChange: function (e) {
-    console.log('picker发送选择改变，携带值为', e.detail.value)
-    this.setData({
-      index: e.detail.value
-    })
-  },
+
 })

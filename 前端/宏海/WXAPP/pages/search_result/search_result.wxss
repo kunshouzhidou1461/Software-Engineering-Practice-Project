@@ -1,1 +1,37 @@
-/* pages/search_result/search_result.wxss */
+.search_head{
+  height: 100rpx;
+  border-bottom:1px solid #E5E5E5;
+  line-height: 100rpx;
+  font-size: 40rpx;
+  font-weight: bold;
+  display: flex;
+
+}
+.search_title
+{ 
+  margin: 0 auto;
+ 
+}
+.tips{
+  margin-top: 20rpx;
+}
+.tips_head{
+  font-weight: bold;
+  font-size:25rpx;
+  color: red
+}
+
+.search_content{
+  
+  margin-left:15rpx;
+}
+.search_detali{
+  margin-top:20rpx;
+  width: 100%;
+  font-size:25rpx;
+
+}
+.tips_detali{
+  width: 100%;
+  font-size:25rpx;
+}

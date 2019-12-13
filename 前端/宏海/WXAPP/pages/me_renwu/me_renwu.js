@@ -51,7 +51,7 @@ Page({
   },
   del: function () {
     wx.request({
-      url: 'https://www.dicky99.xyz:8080/user/del/164',
+      url: 'https://www.dicky99.xyz:8080/user/del/180',
       method: 'GET',
       success: function (res) {
         console.log(res.data)
@@ -179,6 +179,7 @@ Page({
         {
           wx.showToast({
             title: '请先注册',
+            image:'/img/fail.png'
           })
         }
        
